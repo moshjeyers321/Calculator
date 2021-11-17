@@ -1,0 +1,62 @@
+* {
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 500px;
+    width: 350px;
+}
+
+.display {
+    flex-grow: 1;
+    background-color: white;
+    height: 50px;
+    width: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.display-content {
+    height: 40px;
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-grow: 10;
+    justify-content: center;
+    background-color: royalblue;
+}
+
+.numbersGrid {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    flex-grow: 4;
+    gap: 10px;
+}
+
+.btn {
+    background-color: yellow;
+}
+
+.functions {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.functionBtn {
+    flex-grow: 1;
+    margin: 5px;
+}
